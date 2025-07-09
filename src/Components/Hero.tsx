@@ -55,7 +55,7 @@ export default function Hero() {
             <div className={styles.stat}>
               <Palette className={styles.statIcon} />
               <div>
-                <span className={styles.statNumber}>50+</span>
+                <span className={styles.statNumber}>6+</span>
                 <span className={styles.statLabel}>Projects</span>
               </div>
             </div>
