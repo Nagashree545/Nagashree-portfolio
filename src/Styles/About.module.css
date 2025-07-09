@@ -1,0 +1,260 @@
+.about {
+  padding: 8rem 0;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  color: white;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.sectionNumber {
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255, 0, 150, 0.1);
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ff0096, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.titleUnderline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(45deg, #ff0096, #00ffff);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.introCard,
+.philosophyCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.introCard:hover,
+.philosophyCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 0, 150, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 0, 150, 0.2);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.highlight {
+  color: #ff0096;
+  font-weight: 600;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.valueCard {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 255, 255, 0.1);
+  border-color: #00ffff;
+}
+
+.valueIcon {
+  color: #00ffff;
+  margin-bottom: 1rem;
+  size: 2rem;
+}
+
+.valueCard h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.valueCard p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.visualSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experienceCard {
+  background: linear-gradient(135deg, rgba(255, 0, 150, 0.1), rgba(0, 255, 255, 0.1));
+  border: 1px solid rgba(255, 0, 150, 0.3);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.experienceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: conic-gradient(from 0deg, rgba(255, 0, 150, 0.1), rgba(0, 255, 255, 0.1), rgba(255, 255, 0, 0.1));
+  animation: rotate 20s linear infinite;
+  z-index: -1;
+}
+
+.experienceNumber {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #ff0096, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.experienceLabel {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin: 1rem 0;
+}
+
+.experienceDescription {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.techStack {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.techTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00ffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.techItem {
+  background: rgba(255, 0, 150, 0.1);
+  border: 1px solid rgba(255, 0, 150, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  color: #ff0096;
+  transition: all 0.3s ease;
+}
+
+.techItem:hover {
+  background: rgba(255, 0, 150, 0.2);
+  transform: scale(1.05);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sectionNumber {
+    font-size: 4rem;
+    top: -2rem;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
