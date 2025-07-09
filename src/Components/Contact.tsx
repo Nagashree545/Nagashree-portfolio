@@ -110,11 +110,11 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className={styles.contactMethod}>
+              {/* <div className={styles.contactMethod}>
                 <div className={styles.methodIcon}>
                   <Phone />
                 </div>
-                {/* <div className={styles.methodContent}>
+                <div className={styles.methodContent}>
                   <h4>Phone</h4>
                   <a href="tel:7022291164" className={styles.methodLink}>
                     +91 7022291164
@@ -122,8 +122,8 @@ export default function Contact() {
                   <span className={styles.methodNote}>
                     Available 9 AM - 6 PM IST
                   </span>
-                </div> */}
-              </div>
+                </div>
+              </div> */}
             </div>
 
             <div className={styles.socialConnect}>
